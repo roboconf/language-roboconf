@@ -1,0 +1,25 @@
+'scopeName': 'source.roboconf.instances'
+'name': 'Roboconf'
+
+'fileTypes': [
+  'instances'
+]
+
+'patterns': [
+
+    {
+      'begin': '#'
+      'end': '$|\n'
+      'name': 'comment.line'
+    }
+
+    {
+      'match': '\\b(?i:(import|instance of))\\b'
+      'name': 'entity.tag.global'
+    }
+
+    {
+      'match': '\\b(?i:(name|count|channels|instance-data|instance-state))\\b:?|(\\w[-\\w.]*\\b:)'
+      'name': 'keyword.other.instances'
+    }
+]

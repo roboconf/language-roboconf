@@ -1,0 +1,13 @@
+'.source.roboconf.instances':
+  'Name':
+    'prefix': 'na'
+    'body': 'name: ${1:instance-name};$0'
+  'Count':
+    'prefix': 'co'
+    'body': 'count: ${1:2};$0'
+  'Channels':
+    'prefix': 'ch'
+    'body': 'channels: ${1:channel-name};$0'
+  'Instance':
+    'prefix': 'ins'
+    'body': 'instance of ${1:component-name} {\n\tname: ${2:instance-name};$0\n}'

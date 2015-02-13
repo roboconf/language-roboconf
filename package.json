@@ -1,0 +1,11 @@
+{
+  "name": "language-roboconf",
+  "version": "0.0.0",
+  "description": "Syntax Highlighting for Roboconf",
+  "repository": "https://github.com/roboconf/language-roboconf",
+  "license": "MIT",
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  }
+}

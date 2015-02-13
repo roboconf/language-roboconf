@@ -1,0 +1,25 @@
+'scopeName': 'source.roboconf.graph'
+'name': 'Roboconf'
+
+'fileTypes': [
+  'graph'
+]
+
+'patterns': [
+
+    {
+      'begin': '#'
+      'end': '$|\n'
+      'name': 'comment.line'
+    }
+
+    {
+      'match': '\\b(?i:(import|facet))\\b'
+      'name': 'entity.tag.global'
+    }
+
+    {
+      'match': '\\b(?i:(installer|children|imports|exports|extends|facets))\\b:?'
+      'name': 'keyword.other.graph'
+    }
+]

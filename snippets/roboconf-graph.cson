@@ -1,0 +1,22 @@
+'.source.roboconf.graph':
+  'Installer':
+    'prefix': 'in'
+    'body': 'installer: ${1:installer-name};$0'
+  'Children':
+    'prefix': 'chi'
+    'body': 'children: ${1:child-name};$0'
+  'Imports':
+    'prefix': 'im'
+    'body': 'imports: ${1:name}.${2:variable};$0'
+  'Exports':
+    'prefix': 'ex'
+    'body': 'exports: ${1:variable};$0'
+  'Extends':
+    'prefix': 'ext'
+    'body': 'extends: ${1:name};$0'
+  'Facets':
+    'prefix': 'fa'
+    'body': 'facets: ${1:facet-name};$0'
+  'Component':
+    'prefix': '{'
+    'body': '{\n\tinstaller: ${1:installer-name};$0\n'
